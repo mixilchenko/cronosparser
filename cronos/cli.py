@@ -11,4 +11,4 @@ def main(database_dir, target_dir):
     try:
         parse_to_csv(database_dir, target_dir)
     except Exception as e:
-        click.ClickException(e)
+        raise click.ClickException(e)
